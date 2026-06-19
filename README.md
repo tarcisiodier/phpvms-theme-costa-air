@@ -44,3 +44,36 @@ php artisan view:clear
 | `theme.json` | Manifesto do tema |
 
 Páginas não presentes aqui são herdadas do tema `seven`.
+
+## GitHub
+
+Repositório: [github.com/tarcisiodier/phpvms-theme-costa-air](https://github.com/tarcisiodier/phpvms-theme-costa-air)
+
+### Publicar (primeira vez)
+
+Na pasta do tema:
+
+```bash
+cd resources/views/layouts/costa-air
+
+# Autenticar no GitHub (uma vez na máquina)
+gh auth login
+
+# Criar o repo e enviar o código
+gh repo create phpvms-theme-costa-air --public --source=. --remote=origin --push \
+  --description "phpVMS 8 frontend theme — Costa Air (Bootstrap 5, extends seven)"
+```
+
+Se o remote `origin` já existir mas o repo ainda não foi criado:
+
+```bash
+gh repo create phpvms-theme-costa-air --public --push
+```
+
+### Atualizações
+
+```bash
+git add .
+git commit -m "Descrição da mudança"
+git push
+```
