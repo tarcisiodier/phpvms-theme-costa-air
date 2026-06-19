@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
     <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center gap-2 text-white text-decoration-none" href="{{ url('/') }}">
-            <i class="bi bi-airplane-fill fs-4" style="color: #ffd700;"></i>
-            <span class="fw-bold text-uppercase" style="letter-spacing: 0.08em;">Costa Air</span>
+        <a class="navbar-brand d-flex align-items-center py-0" href="{{ url('/') }}">
+            <img src="{{ public_asset('/costa-air/logo.svg') }}" alt="{{ config('app.name') }}" height="40"
+                class="d-inline-block">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

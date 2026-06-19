@@ -6,7 +6,12 @@ Tema frontend público para [phpVMS 8](https://www.phpvms.net), estendendo o tem
 
 Copie esta pasta para `resources/views/layouts/costa-air/` na instalação phpVMS.
 
-Assets estáticos (logo, favicon, etc.) vão em `public/costa-air/` (fora deste repositório, se versionados à parte).
+Copie os assets do tema para a pasta pública:
+
+```bash
+mkdir -p public/costa-air
+cp assets/logo.svg public/costa-air/
+```
 
 ## Configuração
 
@@ -41,6 +46,8 @@ php artisan view:clear
 |---------|--------|
 | `app.blade.php` | Layout principal, CSS de marca |
 | `nav.blade.php` | Navbar Costa Air |
+| `assets/logo.svg` | Logo (publicar em `public/costa-air/`) |
+| `users/index.blade.php` | Página `/pilots` em cards |
 | `theme.json` | Manifesto do tema |
 
 Páginas não presentes aqui são herdadas do tema `seven`.
